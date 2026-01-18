@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+    <div class="calc-outer-border">
+      <div class="calc-inner-border">
+        <input type="text" name="display-area" id="display-area" value="0" />
+
+        <div class="row-display">
+          <input
+            type="text"
+            name="operator-display"
+            id="operator-display"
+            value=""
+          />
+        </div>
+        <div class="row">
+          <button class="button-styling" id="history">
+            <strong>H</strong>
+          </button>
+          <button class="button-styling" id="AC-button">
+            <strong>AC</strong>
+          </button>
+          <button class="button-styling" id="C-button">
+            <strong>C</strong>
+          </button>
+          <button class="button-styling operators" id="division">
+            <strong>&divide;</strong>
+          </button>
+        </div>
+
+        <div class="row">
+          <button class="button-styling numbers"><strong>7</strong></button>
+          <button class="button-styling numbers"><strong>8</strong></button>
+          <button class="button-styling numbers" id="">
+            <strong>9</strong>
+          </button>
+          <button class="button-styling operators" id="division">
+            <strong>&times;</strong>
+          </button>
+        </div>
+
+        <div class="row">
+          <button class="button-styling numbers" id="C">
+            <strong>4</strong>
+          </button>
+          <button class="button-styling numbers" id="">
+            <strong>5</strong>
+          </button>
+          <button class="button-styling numbers" id="">
+            <strong>6</strong>
+          </button>
+          <button class="button-styling operators" id="division">
+            <strong>&minus;</strong>
+          </button>
+        </div>
+
+        <div class="row">
+          <button class="button-styling numbers" id="">
+            <strong>1</strong>
+          </button>
+          <button class="button-styling numbers" id="">
+            <strong>2</strong>
+          </button>
+          <button class="button-styling numbers" id="">
+            <strong>3</strong>
+          </button>
+          <button class="button-styling operators" id="division">
+            <strong>&plus;</strong>
+          </button>
+        </div>
+
+        <div class="row-last">
+          <button class="button-styling operators" id="">
+            <strong>&plusmn;</strong>
+          </button>
+          <button class="button-styling numbers" id="">
+            <strong>0</strong>
+          </button>
+          <button class="button-styling operators" id="">
+            <strong>.</strong>
+          </button>
+          <button class="button-styling operators" id="equals">
+            <strong>&equals;</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="history-popup" class="history-popup hidden">
+      <div class="history-content">
+        <h3>Calculation History</h3>
+        <div id="history-list"></div>
+        <button id="close-history">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
